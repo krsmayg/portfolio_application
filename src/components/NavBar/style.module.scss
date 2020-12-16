@@ -1,0 +1,38 @@
+.navbar {
+  width: 5rem;
+  height: 100vh;
+  background: #181818;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navLinks,
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+}
+.socialLinks {
+  margin-bottom: 15px;
+}
+.item,
+.socialItem {
+  text-align: center;
+}
+.item {
+  padding: 20px 0;
+}
+
+.socialItem {
+  padding: 5px 0;
+}
+.iconLink, .socialLink  {
+  fill: #8a8888;
+  cursor: pointer;
+  transition: all 0.07s cubic-bezier(0.49, 0.27, 0.83, 0.67);
+  &:hover {
+    fill: #f39c12;
+  }
+}
+
