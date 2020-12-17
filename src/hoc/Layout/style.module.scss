@@ -1,8 +1,6 @@
 .page { 
-  width: calc(100% - 5rem);
   height: 100%;
   position: absolute;
-  margin-left:5rem;
 }
 .container {
   height: 90%;
@@ -26,4 +24,16 @@
 .bottomTag{
   bottom:0;
   top: auto;
+}
+@media only screen and (max-width: 600px) { 
+  .page {
+    margin: 0;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 600px) { 
+  .page {
+    margin-left:5rem;
+    width: calc(100% - 5rem);
+  }
 }

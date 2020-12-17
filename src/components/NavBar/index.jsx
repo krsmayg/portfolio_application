@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./style.module.scss";
-import { useHistory, NavLink } from "react-router-dom";
+import {NavLink } from "react-router-dom";
 import IosHomeOutline from "react-ionicons/lib/IosHomeOutline";
 import IosPersonOutline from "react-ionicons/lib/IosPersonOutline";
 import IosSettingsOutline from "react-ionicons/lib/IosSettingsOutline";
@@ -11,12 +11,9 @@ import LogoGithub from "react-ionicons/lib/LogoGithub";
 import LogoLinkedin from "react-ionicons/lib/LogoLinkedin";
 
 function NavBar() {
-  let history = useHistory();
-  const handleLink = (link) => history.push(link);
-
   return (
     <div className={classes.navbar}>
-      <h1 style={{ textAlign: "center" }}>K</h1>
+      <h1 style={{ textAlign: "center" }} className={classes.logo}>K</h1>
       <div className={classes.navLinks}>
         <div className={classes.item}>
           <NavLink exact to="/" activeClassName={classes.active}>

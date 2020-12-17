@@ -1,11 +1,8 @@
 .navbar {
-  width: 5rem;
-  height: 100vh;
   background: #181818;
   position: fixed;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+ 
 }
 
 .navLinks,
@@ -28,8 +25,6 @@
     }
   }
 }
-
-
 .socialItem {
   padding: 5px 0;
 }
@@ -45,4 +40,33 @@
 }
 .test-link-active {
   color: red;
+}
+@media only screen and (max-width: 600px) {
+  .navbar {
+    height: 5rem;
+    width: 100vw;
+    bottom: 0;
+    flex-direction: row;
+    z-index: 10000;
+  }
+  .navLinks {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;  
+  }
+  .logo { 
+    display: none;
+  }
+  .socialLinks{
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .navbar {
+    width: 5rem;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
