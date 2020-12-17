@@ -1,0 +1,21 @@
+ .btn {
+  border: 1px solid;
+  background: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+
+ }
+ .primaryBtn {
+    padding:10px 20px;
+    font-size: 14px;
+    letter-spacing:4px;
+    color: #f39c12;
+    border-color:  #f39c12;
+    transition: all .1s ease-in;
+    &:hover {
+      background: #f39c12;
+      color: #292929;
+    }
+ }
