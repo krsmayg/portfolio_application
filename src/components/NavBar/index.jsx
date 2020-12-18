@@ -39,7 +39,7 @@ function NavBar() {
           </NavLink>
         </div>
         <div className={classes.item}>
-          <NavLink exact to="/projects" activeClassName={classes.active}>
+          <NavLink exact to="/portfolio" activeClassName={classes.active}>
             <IosEyeOutline fontSize="30px" className={classes.iconLink} />
           </NavLink>
         </div>

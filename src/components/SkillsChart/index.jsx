@@ -8,15 +8,23 @@ const data = [
   },
   {
     label: "MongoDb",
-    value: 6
+    value: 7
+  },
+  {
+    label: "Express",
+    value: 7
   },
   {
     label: "C#",
     value: 3
   },
   {
+    label: "Angular",
+    value: 2
+  },
+  {
     label: "React",
-    value: 7
+    value: 8
   },
 
   {
@@ -27,10 +35,7 @@ const data = [
     label: "NodeJS",
     value: 6
   },
-  {
-    label: "Angular",
-    value: 2
-  },
+  
 
 ]
 
