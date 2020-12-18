@@ -1,0 +1,14 @@
+.section  {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.textBox {
+  font-size: 16px;
+  line-height:24px;
+  text-align:left;
+}
+.leftInfo {
+  width:40%;
+}
