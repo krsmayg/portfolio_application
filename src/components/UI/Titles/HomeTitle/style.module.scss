@@ -43,8 +43,8 @@
   animation: bounce .4s forwards;
   opacity: 0;
   &:hover {
+    opacity: 1;
     color: #f39c12;
-    transform: scale(1.2);
   }
 }
 @for $i from 1 through 40 {
@@ -54,7 +54,7 @@
 }
 @keyframes bounce {
   0% {
-    transform: translateY(-25px);
+    transform: translateY(-25px) ;
     opacity: 0;
   }
   33% {

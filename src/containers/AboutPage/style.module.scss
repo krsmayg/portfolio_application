@@ -1,0 +1,30 @@
+.section  {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.textBox {
+  font-size: 16px;
+  line-height:24px;
+  text-align:left;
+}
+.leftInfo {
+  width:40%;
+}
+.icon {
+  cursor:pointer;
+  width: 400px;
+  &:hover {
+    animation: bouncing .4s  alternate infinite cubic-bezier(.6,.05,.15,.95);
+  }
+}
+
+@keyframes bouncing{
+  0% {
+		transform: translate3d(0, 10px, 0) scale(1.2, 0.85);
+	}
+	100% {
+		transform: translate3d(0, -20px, 0) scale(0.9, 1.1);
+	}
+}

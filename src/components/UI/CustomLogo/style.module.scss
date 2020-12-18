@@ -1,0 +1,71 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon {
+  fill: #f39c12;
+}
+
+.leftIcon, .rightIcon {
+  transition: all 2s ease-in;
+  cursor: pointer;
+  &:hover {
+    animation: bouncingLetter .4s  alternate infinite cubic-bezier(.6,.05,.15,.95);;
+  }
+}
+
+@keyframes bouncingLetter {
+  0% {
+		transform: translate3d(0, 10px, 0) scale(1.2, 0.85);
+	}
+	100% {
+		transform: translate3d(0, -20px, 0) scale(0.9, 1.1);
+	}
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
+
+/////////////////////////////
+
+// @keyframes left-icon-anim {
+//   0% {
+//     transform: translate(0, 0);
+//   }
+//   20% {
+//     transform: translate(-50px, 0);
+//   }
+//   40% {
+//     transform: translate(-50px, 0) rotate(90deg);
+//   }
+//   60% {
+//     transform: translate(-50px, -50px) rotate(90deg);
+//   }
+// }
+// @keyframes right-icon-anim {
+//   0% {
+//     transform: translate(0, 0);
+//   }
+//   20% {
+//     transform: translate(50px, 0);
+//   }
+//   40% {
+//     transform: translate(50px, 0) rotate(90deg);
+//   }
+//   60% {
+//     transform: translate(50px, 50px) rotate(90deg);
+//   }
+// }

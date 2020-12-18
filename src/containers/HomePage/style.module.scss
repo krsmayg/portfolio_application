@@ -2,6 +2,7 @@
   display: flex;
   height: 100%;
   align-items: center;
+  justify-content: space-between;
 }
 .leftInfo {
   margin-left: 40px;
@@ -10,7 +11,13 @@
     animation-delay: .5s;
   }
 }
-
+.rightInfo {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
 @keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
