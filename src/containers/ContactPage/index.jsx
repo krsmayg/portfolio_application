@@ -3,8 +3,8 @@ import classes from "./style.module.scss";
 import AdditionalTitle from "../../components/UI/Titles/AdditionalTitle";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
-import {ButtonPrimary} from "../../components/UI/Buttons";
-
+import {ButtonSecondary} from "../../components/UI/Buttons";
+import CustomMap from "../../components/CustomMap";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -66,18 +66,15 @@ function ContactPage() {
             </Grid>
           </Grid>
           <br />
-          <ButtonPrimary label="Contact me" link="/contact" />
+          <ButtonSecondary label="Send" fn={() => {}} />
         </div>
       </div>
-      <div className={classes.rightInfo}></div>
+      <div className={classes.rightInfo}>
+        <CustomMap />
+      </div>
     </div>
   );
 }
 
 export default ContactPage;
-{
-  /* <input type="text" placeholder="Name" name="name" className={classes.input} style={{flexGrow: 1}} />
-<input type="text" placeholder="Name" name="name" className={classes.input} style={{flexGrow: 1}} />
-<input type="text" placeholder="Name" name="name" className={classes.input} style={{flexGrow: 3}} />
-<input type="text" placeholder="Name" name="name" className={classes.input} style={{flexGrow: 1}} /> */
-}
+

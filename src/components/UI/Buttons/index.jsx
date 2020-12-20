@@ -10,9 +10,9 @@ export const ButtonPrimary = ({label, link}) => {
    );
 }
 
-export const ButtonSecondary = ({label}) => {
+export const ButtonSecondary = ({label ,fn}) => {
   return ( 
-    <button className={`${classes.btn} ${classes.primaryBtn}`}>
+    <button className={`${classes.btn} ${classes.primaryBtn}`} onClick={fn}>
       <span>{label}</span>
     </button>
    );
