@@ -32,6 +32,7 @@ function ContactPage() {
                   name="name"
                   className={classes.input}
                 />
+                <div className={classes.blank}></div>
               </div>
             </Grid>
             <Grid item xs={6}>
@@ -42,6 +43,7 @@ function ContactPage() {
                   name="name"
                   className={classes.input}
                 />
+                <div className={classes.blank}></div>
               </div>
             </Grid>
             <Grid item xs={12}>
@@ -52,6 +54,7 @@ function ContactPage() {
                   name="subject"
                   className={classes.input}
                 />
+                <div className={classes.blank}></div>
               </div>
             </Grid>
             <Grid item xs={12}>
@@ -62,6 +65,7 @@ function ContactPage() {
                   name="message"
                   className={classes.textarea}
                 />
+                <div className={classes.blank}></div>
               </div>
             </Grid>
           </Grid>

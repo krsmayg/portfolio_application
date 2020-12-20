@@ -10,8 +10,6 @@ const coord = [48.2915, 25.9403];
 const CustomMap = () => {
   const [viewport, setViewport] = useState({
     zoom: 4,
-    height: "100vh",
-    width: "50vw",
     latitude: 49,
     longitude: 32
   });
@@ -22,6 +20,8 @@ const CustomMap = () => {
         mapboxApiAccessToken={token}
         onViewportChange={(viewport) => setViewport(viewport)}
         mapStyle="mapbox://styles/ayden65/ckixbhcnc3loy19mqo43mcnf4"
+        height="100vh"
+        width="50vw"
       >
         <Marker latitude={coord[0]} longitude={coord[1]} >
         <img src={markSrc} className={classes.icon} alt="Mark Location" />
