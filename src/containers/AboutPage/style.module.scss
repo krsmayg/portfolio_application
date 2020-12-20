@@ -28,3 +28,22 @@
 		transform: translate3d(0, -20px, 0) scale(0.9, 1.1);
 	}
 }
+@media only screen and (max-width: 1158px) {
+  .section {
+    flex-direction: column;
+    height: auto;
+  }
+  .leftInfo {
+    width:100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .section {
+    margin: 0;
+    padding: 0;
+  }
+  .icon {
+    width: 200px;
+  }
+
+}
