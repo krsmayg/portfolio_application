@@ -1,37 +1,41 @@
-.section  {
+.section {
   display: flex;
   height: 100%;
   align-items: center;
   justify-content: space-between;
 }
 .leftInfo {
-  width:40%;
+  width: 40%;
+}
+.rightInfo {
+  width: 60%;
+  position: relative;
+  margin-left: 35px;
 }
 .contactForm {
   width: 100%;
   // height: 300px;
   background: #000;
-  flexGrow: 1;
+  flexgrow: 1;
   display: flex;
-
 }
-.input, .textarea { 
+.input,
+.textarea {
   width: 100%;
   outline: none;
-  font-size:16px;
-  background: #2b2b2b;;
+  font-size: 16px;
+  background: #2b2b2b;
   color: #8d8d8d;
-  padding:0 20px;
+  padding: 0 20px;
   height: 50px;
   border: 0;
-
 }
 .textarea {
   resize: vertical;
   overflow: auto;
   min-height: 150px;
 }
-.container{
+.container {
   padding-right: 35px;
   position: relative;
   overflow: hidden;
@@ -40,7 +44,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom:0;
+    bottom: 0;
     left: 0;
     height: 1px;
     width: 100%;
@@ -49,9 +53,10 @@
     transition: transform 0.3s ease;
   }
 }
-.input:focus + .blank::after, .textarea:focus + .blank::after {
+.input:focus + .blank::after,
+.textarea:focus + .blank::after {
   transform: translateX(0%);
-} 
+}
 
 @media only screen and (max-width: 800px) {
   .section {
@@ -59,12 +64,17 @@
     height: auto;
   }
   .leftInfo {
-    width:100%;
+    width: 100%;
   }
-}
-@media only screen and (max-width: 600px) {
-
   .rightInfo {
-    display: none;
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
   }
 }
+// @media only screen and (max-width: 600px) {
+
+//   .rightInfo {
+//     display: none;
+//   }
+// }

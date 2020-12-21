@@ -10,7 +10,7 @@ function AboutPage() {
         <p className={classes.textBox}>
           Purposeful guy. Ready to contribute to team success through hard work,
           attention to detail and perseverance . Mostly clear understanding of
-          different tasks. Motivated to learn, grow and excel in Web Industry.
+          different tasks. Motivated to learn, grow up and excel in Web Industry.
         </p>
         <p className={classes.textBox}>
           Interested in the entire frontend spectrum and working on ambitious
