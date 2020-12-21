@@ -12,7 +12,7 @@ export const ButtonPrimary = ({label, link}) => {
 
 export const ButtonSecondary = ({label ,fn}) => {
   return ( 
-    <button className={`${classes.btn} ${classes.primaryBtn}`} onClick={fn}>
+    <button className={`${classes.btn} ${classes.primaryBtn}`} onClick={fn} type="submit" >
       <span>{label}</span>
     </button>
    );
